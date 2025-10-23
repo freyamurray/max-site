@@ -1,12 +1,22 @@
 :root {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     --background: #ffffff;
     --text: #000000;
+    --accent: rgb(255, 0, 144);
+}
+
+@font-face {
+    font-family: positions;
+    src: url(fonts/PositionsByArixbored-Regular\ .otf);
 }
 
 body, button {
     background-color: var(--background);
     color: var(--text);
+}
+
+button {
+    cursor: pointer;
 }
 
 .dark {
@@ -19,8 +29,13 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: solid;
-    margin: 1rem;
+    /* border: solid; */
+    margin: 0 2rem 0rem ;
+    padding: 1rem 0 0 0;
+    font-family: positions;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    line-height: 0%;
 }
 
 .banner {
@@ -28,36 +43,53 @@ header {
     /* something here to make the theme button stick down? */
 }
 
+.tagline {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    letter-spacing: normal;
+}
+
 #theme-switch {
     position: fixed;
     top: 0;
     right: 0;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 nav {
-    border: solid;
+    border-bottom: solid 1px;
     padding: 0;
-    margin: 1rem;
+    line-height: 0%;
+    margin: 1rem 3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .tab {
+    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
 
 .tab:hover {
     text-decoration: underline;
+    background-color: #000000;
+    color: var(--text);
 }
 
 .page {
-    border: solid;
-    margin: 1rem;
+    /* border: solid; */
+    margin: -1rem 2rem;
     padding: 1rem;
     /* max-height: 26rem;
     overflow-x: auto; */
+}
+
+.title {
+    font-family: positions;
+    font-size: 2rem;
+    line-height: 0;
+    letter-spacing: .5rem;
 }
 
 .examples {
@@ -79,9 +111,9 @@ nav {
 }
 
 footer {
-    border: solid;
+    /* border: solid; */
     padding: 0;
-    margin: 1rem;
+    margin: 2rem;
     text-align: center;
 }
 
