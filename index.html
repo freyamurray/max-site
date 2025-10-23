@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>site wireframe</title>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <h1>site title here</h1>
+            <button id="theme-switch" onclick="darkMode()">dark mode</button>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <p class="tab" id="home-tab" onclick="selectPage(event, 'home')">home</p>
+            <p class="tab" id="about-tab" onclick="selectPage(event, 'about')">about</p>
+            <p class="tab" id="portfolio-tab" onclick="selectPage(event, 'portfolio')">porfolio</p>
+            <p class="tab" id="contact-tab" onclick="selectPage(event, 'contact')">contact</p>
+            <p class="tab" id="other-tab" onclick="myFunction()">etc.?</p>
+        </nav>
+        <div class="page" id="home" style="display: block;">
+            <h2>home</h2>
+            <div style="float: right; border: solid; width: 5rem; height: 7rem; margin: 0 1rem; padding: 1rem;">pic of
+                you?</div>
+            <p>A quick summary of you and your art.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illo corrupti sapiente reiciendis
+                recusandae nobis, blanditiis veniam aliquam odit commodi nisi id eveniet, quo debitis quibusdam labore!
+                Expedita, vel sapiente!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptas, explicabo distinctio laudantium ab
+                tempora voluptates aliquid obcaecati? Fugit laboriosam nisi veritatis nostrum sed consectetur
+                perspiciatis tempore itaque. Aspernatur, asperiores?</p>
+            <div class="examples" style="display: none;">
+                <img class="example-pic" src="#" alt="pic 1">
+                <img class="example-pic" src="#" alt="pic 2">
+                <img class="example-pic" src="#" alt="pic 3">
+                <img class="example-pic" src="#" alt="literally however many you want">
+            </div>
+        </div>
+        <div class="page" id="about" style="display: none;">
+            <h2>about</h2>
+            <p>perhaps a more in depth blurb about you, your art, experiences, education, influences, whatever else you
+                might like to include. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis cupiditate sequi ut error! Fugiat
+                architecto iusto atque asperiores eos. Iusto molestias ipsam repellat sunt tenetur illum illo saepe
+                ullam culpa?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, fugiat, illo aliquam recusandae ipsa
+                minima ad expedita eum, quae exercitationem animi. Unde expedita consequatur dolores aspernatur
+                inventore iste maxime nemo.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis deleniti, obcaecati facere adipisci
+                libero eveniet sunt velit natus sed, exercitationem illum enim odio similique minus nesciunt veniam ab
+                quam quia.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit, animi nemo dolor excepturi, fugiat
+                nisi vitae eius modi qui veniam cumque, totam voluptatibus nesciunt sint aspernatur vero ea ab!</p>
+        </div>
+        <div class="page" id="portfolio" style="display: none;">
+            <h2>portfolio</h2>
+            <p>images here (perhaps a tagging system?)</p>
+        </div>
+        <div class="page" id="contact" style="display: none;">
+            <h2>contact</h2>
+            <p>this is totally optional (as everthing is!), could be a list of links instead like to instagram</p>
+            <div class="contact-form">
+                <form action="https://formsubmit.co/your-email@example.com" method="POST">
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <br>
+                    <label for="subject">Message subject</label>
+                    <br>
+                    <input type="text" id="subject" name="subject" required>
+                    <br>
+                    <br>
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>footer</p>
+    </footer>
+</body>
+
+</html>

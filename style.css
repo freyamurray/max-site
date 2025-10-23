@@ -1,0 +1,90 @@
+:root {
+    font-family:Arial, Helvetica, sans-serif;
+    --background: #ffffff;
+    --text: #000000;
+}
+
+body, button {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.dark {
+    --background: #000000;
+    --text: #ffffff;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: solid;
+    margin: 1rem;
+}
+
+.banner {
+    margin: auto;
+    /* something here to make the theme button stick down? */
+}
+
+#theme-switch {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+}
+
+nav {
+    border: solid;
+    padding: 0;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tab {
+    cursor: pointer;
+}
+
+.tab:hover {
+    text-decoration: underline;
+}
+
+.page {
+    border: solid;
+    margin: 1rem;
+    padding: 1rem;
+    /* max-height: 26rem;
+    overflow-x: auto; */
+}
+
+.examples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.example-pic {
+    border: solid;
+    width: 8rem;
+    height: 10rem;
+    margin: 1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    border: solid;
+    padding: 0;
+    margin: 1rem;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
