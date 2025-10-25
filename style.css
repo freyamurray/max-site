@@ -10,19 +10,24 @@
     src: url(fonts/PositionsByArixbored-Regular\ .otf);
 }
 
-    html, body {
-        height: 100dvh;
-        scrollbar-width: none;
-        padding-bottom: 1rem;
-    }
+html,
+body {
+    height: 100dvh;
+    scrollbar-width: none;
+    padding-bottom: 1rem;
+}
 
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 50rem;
+    justify-self: center;
+}
 
-body, button {
+body,
+button {
     background-color: var(--background);
     color: var(--text);
     transition-duration: .2s;
@@ -55,7 +60,7 @@ header {
     flex-direction: column;
     text-align: center;
     /* border: solid; */
-    margin: 0 2rem 0rem ;
+    margin: 0 2rem 0rem;
     padding: 1rem 0 0 0;
     font-family: positions;
     font-size: 2rem;
@@ -126,10 +131,10 @@ nav {
 
 .pic {
     display: flex;
-    float: right; 
-    width: 9rem; 
-    height: 10rem; 
-    margin: -1rem 1rem; 
+    float: right;
+    width: 9rem;
+    height: 10rem;
+    margin: -1rem 1rem;
 }
 
 .keith-icon {
@@ -164,7 +169,7 @@ nav {
 }
 
 main {
-        flex: 1;
+    flex: 1;
 }
 
 .input-wrapper {
@@ -179,7 +184,8 @@ main {
     flex-direction: column;
 }
 
-input, textarea {
+input,
+textarea {
     font-family: Arial, Helvetica, sans-serif;
     border: solid 1px;
     border-radius: 4px;
