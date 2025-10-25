@@ -13,22 +13,26 @@
     <header>
         <div class="banner">
             <h1>Keith G</h1>
-            <h2 class="tagline">multimedia artist</p>
-            <button id="theme-switch" onclick="darkMode()">dark mode</button>
+            <h2 class="tagline hidden">multimedia artist</h2>
+            <button id="theme-switch" onclick="darkMode()">dark</button>
         </div>
     </header>
     <main>
         <nav>
-            <p class="tab" id="home-tab" onclick="selectPage(event, 'home')">home</p>
+            <p class="tab active" id="home-tab" onclick="selectPage(event, 'home')">home</p>
             <p class="tab" id="about-tab" onclick="selectPage(event, 'about')">about</p>
             <p class="tab" id="portfolio-tab" onclick="selectPage(event, 'portfolio')">porfolio</p>
             <p class="tab" id="contact-tab" onclick="selectPage(event, 'contact')">contact</p>
-            <p class="tab" id="other-tab" onclick="myFunction()">etc.?</p>
+            <p class="tab" id="other-tab" onclick="myFunction()" style="display: none;">etc.?</p>
         </nav>
         <div class="page" id="home" style="display: block;">
             <h2 class="title">home</h2>
-            <div style="float: right; border: solid; width: 5rem; height: 7rem; margin: 0 1rem; padding: 1rem;">pic of
-                you?</div>
+            <div class="pic" id="dark-pic" style="display: none;">
+                <img class="keith-icon" src="images/Kg-white.png" alt="a cute little cat drawing">
+            </div>
+            <div class="pic" id="light-pic" style="display: flex;">
+                <img class="keith-icon" src="images/Kg-black.png" alt="a cute little car drawing">
+            </div>
             <p>A quick summary of you and your art.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illo corrupti sapiente reiciendis
                 recusandae nobis, blanditiis veniam aliquam odit commodi nisi id eveniet, quo debitis quibusdam labore!
@@ -65,36 +69,46 @@
         </div>
         <div class="page" id="contact" style="display: none;">
             <h2 class="title">contact</h2>
-            <p>this is totally optional (as everthing is!), could be a list of links instead like to instagram</p>
+            <p>Please get in touch with any enquiries you may have!</p>
             <div class="contact-form">
                 <form action="https://formsubmit.co/freyaclmurray@gmail.com" method="POST">
-                    <label for="name">Name</label>
-                    <br>
-                    <input type="text" id="name" name="name" required>
-                    <br>
-                    <br>
-                    <label for="email">Email</label>
-                    <br>
-                    <input type="email" id="email" name="email" required>
-                    <br>
-                    <br>
-                    <label for="subject">Message subject</label>
-                    <br>
-                    <input type="text" id="subject" name="subject" required>
-                    <br>
-                    <br>
-                    <label for="message">Message</label>
-                    <br>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                    <br>
-                    <br>
+                    <div class="form-wrapper" id="name-form">
+                        <div class="input-wrapper" id="name-input">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="input-wrapper" id="surname-input">
+                            <label for="surname">Surname</label>
+                            <input type="text" id="surname" name="surname" required>
+                        </div>
+                    </div>
+                    <div class="form-wrapper" id="contact-form">
+                        <div class="input-wrapper" id="email-input">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input-wrapper" id="phone-input">
+                            <label for="phone">Phone number</label>
+                            <input type="" id="phone" name="phone">
+                        </div>
+                    </div>
+                    <div class="form-wrapper" id="message-form">
+                        <div class="input-wrapper" id="message-subject">
+                            <label for="subject">Message subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="input-wrapper" id="message-content">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                    </div>
                     <input type="submit" value="Send Message">
                 </form>
             </div>
         </div>
     </main>
     <footer>
-        <p>footer</p>
+        <small>designed and coded by <a href="https://github.com/freyamurray">freya murray</a></small>
     </footer>
 </body>
 
